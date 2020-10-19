@@ -1,0 +1,253 @@
+/* Default CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.fixed-width {
+    width: 1200px;
+    margin: auto;
+}
+/* header Css */
+.header {
+    background: #107faa;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+.header-left {
+    float: left;
+    width: 30%;
+}
+.header-left img {
+    width: 160px;
+    height: auto;
+    margin-top: 10px;
+}
+.header-right {
+    float: right;
+    width: 70%;
+}
+.header-right ul {
+    text-align: right;
+    
+}
+.header-right ul li {
+    display: inline-block;
+    margin-left: -4px;
+}
+.header-right ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 30px;
+    line-height: 78px;
+    border-right: 1px solid #ddd;
+    font-size: 20px;
+    transition: .4s;
+    
+}
+.header-right ul li a:hover {
+    background: #056baf;
+}
+.header-right ul li:first-child {
+    border-left: 1px solid #ddd;
+}
+/* Drobdown menu */
+.header-right ul  li {
+    position: relative;
+   
+}
+.header-right ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: #107faa;
+    border-top: 1px solid #ddd;
+    transition: .5s;
+}
+.header-right ul li ul li {
+    display: block;
+    margin-left: 0;
+   
+}
+.header-right ul li ul li a {
+    display: block;
+    border:none;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.header-right ul ul li:first-child {
+    border-left: none;
+}
+.header-right ul li ul li:last-child a{
+    border-bottom: none;
+}
+/* hover part */
+.header-right ul li ul {
+    opacity: 0;
+    visibility: hidden;
+    transform: scaley(0);
+    transform-origin: top center;
+}
+.header-right ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+
+/* banner css */
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.banner {
+    background: url(./img/hasin.jpg) no-repeat center;
+    padding: 300px 0px;
+    background-size: cover;
+    margin-top: 78px;
+   
+}
+.banner-caption {
+    color: #fff;
+}
+.banner-caption h1 {
+    background: rgb(209, 104, 104);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+.banner-caption h2 {
+    background: #58839c;
+    width: 400px;
+    margin: auto;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 26px;
+}
+/* about us */
+.about {
+    margin-top: 60px;
+}
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 19px;
+}
+/* Service section */
+.service {
+    margin-top: 60px;
+}
+.service-item {
+    float: left;
+    width: 31.3%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.service-item span {
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #3a92da;
+    margin: auto;
+    color: #fff;
+    line-height: 60px;
+    font-size: 35px;
+    border-radius: 20px 0 20px;
+}
+.service-item h3 {
+    margin: 20px 0;
+}
+/* blog-section */
+.blog-container {
+    margin-top: 60px;
+}
+.blog-left {
+    float: left;
+    width: 70%;
+}
+.blog-right {
+    float: right;
+    width: 25%;
+}
+.blog-item img {
+    float: left;
+    width: 164px;
+    height: auto;
+    margin-right: 15px;
+}
+.blog-item {
+    margin-bottom: 30px;
+}
+.blog-item p {
+    text-align: justify;
+}
+/* blog-right */
+.blog-right {
+
+}
+.blog-right h2 {
+    font-size: 30px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+}
+.blog-right ul {
+    list-style: none;
+}
+.blog-right ul li {
+    border: 1px solid #ddd;
+    background: #fafafa;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+/* footer */
+.footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 15px 0;
+}
+.footer-left {
+    float: left;
+    width: 40%;
+}
+.footer-right {
+    float: left;
+    width: 60%;
+}
+/* social-menu */
+.social-menu {
+    text-align: right;
+}
+.social-menu li {
+    display: inline-block;
+}
+.social-menu li a {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.social-menu li a:hover {}
